@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Drawer from "@mui/material/Drawer";
+import Form from "./Components/Form";
+import './App.css'
 function App() {
+  const [isOpen, setIsOpen] = React.useState(false);
+  function toggleDrawer() {
+    setIsOpen((prevState) => !prevState);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="button"onClick={toggleDrawer}>Save segment</button>
+
+      <Drawer className="drawer" open={isOpen} onClose={toggleDrawer} anchor="right">
+        <Form/>
+      </Drawer>
     </div>
   );
 }

@@ -1,0 +1,71 @@
+.newDrop_down,
+button,
+.dropDown:hover {
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  border: 2px solid;
+  background-color: #39aebc;
+  color: aliceblue;
+}
+.formContainer {
+  margin: 1rem;
+}
+.segmentName_container p,
+.notes p {
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+.segmentName_container input {
+  font-size: 0.9rem;
+  width: 90%;
+  padding: 0.5rem;
+  margin: .5rem 0;
+}
+.dropDown_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x:hidden;
+
+  max-height: 22rem;
+}
+.dropDown {
+  outline: none;
+  font-weight: 300;
+  width: 80%;
+  height: 2rem;
+}
+.newDrop_down {
+  width: fit-content;
+  border-bottom: 2px solid #41b495;
+  color: #41b494;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: #eaeaea;
+}
+.Button {
+  font-size: 0.8rem;
+  height: 2rem;
+  margin: 0.5rem;
+  padding: .5rem;
+  border: none;
+  border-radius: 3px;
+}
+.save {
+  background-color: #41b494;
+  color: white;
+}
+.cancel {
+    background-color:aliceblue;
+    color: red;
+  }
